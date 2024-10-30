@@ -44,6 +44,8 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 # Exclude Aperture camera
 PRODUCT_NO_CAMERA := false
 
+#EPPE
+TARGET_DISABLE_EPPE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
