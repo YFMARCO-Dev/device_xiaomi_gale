@@ -20,6 +20,31 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 23106RN0DA
 
+# UDFPS support
+TARGET_HAS_UDFPS := false
+
+# Blur
+TARGET_ENABLE_BLUR := false
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 720
+
+# BCR (Call recording)
+TARGET_PREBUILT_BCR := true
+
+# build Lawnchair with QUICK switch (Pixel launcher by default)
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+
+# Custom package installer
+TARGET_USE_CUSTOM_PACKAGE_INSTALLER := true
+
+# Build google recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Exclude Aperture camera
+PRODUCT_NO_CAMERA := false
+
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
