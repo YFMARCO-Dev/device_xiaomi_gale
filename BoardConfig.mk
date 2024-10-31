@@ -96,6 +96,14 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 TARGET_KERNEL_CONFIG := gale_user_defconfig
 TARGET_KERNEL_SOURCE := $(DEVICE_PATH)-kernel/kernel-headers
 
+# Clang
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := r498229b
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r498229b
+KERNEL_SUPPORTS_LLVM_TOOLS := true
+KERNEL_FULL_LLVM := true
+KERNEL_CC := CC=clang
+
 # NFC
 ODM_MANIFEST_SKUS += \
     c3un \
